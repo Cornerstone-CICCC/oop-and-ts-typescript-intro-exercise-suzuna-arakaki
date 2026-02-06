@@ -1,17 +1,15 @@
+"use strict";
 // 4. Create a function named `findMax` that takes an array of numbers as a parameter.
 //    The function should return the largest number in the array.
 //    Ensure the parameter and return type are typed.
-
-function compareNumbers(a: number, b: number) {
-  return a - b;
+function compareNumbers(a, b) {
+    return a - b;
 }
-
-function findMax(numbers: number[]) {
-  const sortedNumbers = numbers.sort(compareNumbers);
-  const lastIndex = sortedNumbers.length - 1;
-  return sortedNumbers[lastIndex];
+function findMax(numbers) {
+    const sortedNumbers = numbers.sort(compareNumbers);
+    const lastIndex = sortedNumbers.length - 1;
+    return sortedNumbers[lastIndex];
 }
-
 // Expected output:
 console.log(findMax([1, 5, 3, 9, 2])); // 9
 console.log(findMax([7, 2, 10, 4])); // 10
